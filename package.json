@@ -18,6 +18,7 @@
     "projen": "npx projen"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.89",
     "@types/jest": "^27.4.0",
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -40,6 +41,7 @@
   "dependencies": {
     "@therify-inc/ddd-utils": "^0.2.21",
     "@therify-inc/types": "^0.4.21",
+    "aws-lambda": "^1.0.7",
     "dynamoose": "^2.8.3",
     "zod": "^3.11.6"
   },

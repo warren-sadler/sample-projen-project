@@ -1,5 +1,6 @@
 interface CreateAuthOrganizationParams {
     name: string;
+    displayName: string;
 }
 
 interface CreateOrganizationSuccess {

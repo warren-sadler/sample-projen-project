@@ -10,7 +10,11 @@ const OrganizationSchema = z.object({
 const ENTITY_NAME = 'ORGANIZATION' as const;
 
 export const {
-    commands: { create: createOrganization, update: updateOrganization },
+    commands: {
+        COMMAND_TYPES: ORGANIZATION_COMMANDS,
+        create: createOrganization,
+        update: updateOrganization,
+    },
     entity: { ORGANIZATION },
     events: { created: organizationCreated },
 } = generateDomain({
@@ -23,3 +27,6 @@ export const {
 export type Organization = ReturnType<typeof ORGANIZATION['create']>;
 export type CreateOrganizationCommand = ReturnType<typeof createOrganization>;
 export type UpdateOrganizationCommand = ReturnType<typeof updateOrganization>;
+export type OrganizationCommand =
+    | CreateOrganizationCommand
+    | UpdateOrganizationCommand;
