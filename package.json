@@ -18,6 +18,8 @@
     "projen": "npx projen"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
     "@types/aws-lambda": "^8.10.89",
     "@types/jest": "^27.4.0",
     "@types/node": "^12",
@@ -29,6 +31,7 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
     "jest": "^27.4.5",
     "jest-junit": "^13",
     "json-schema": "^0.4.0",

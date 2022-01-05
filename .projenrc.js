@@ -21,7 +21,12 @@ const project = new typescript.TypeScriptAppProject({
         },
     },
     // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-    devDeps: ['@types/aws-lambda'] /* Build dependencies for this module. */,
+    devDeps: [
+        '@types/aws-lambda',
+        'husky',
+        '@commitlint/config-conventional',
+        '@commitlint/cli',
+    ] /* Build dependencies for this module. */,
     // packageName: undefined,  /* The "name" in package.json. */
     // release: undefined,      /* Add release management to this project. */
 });
